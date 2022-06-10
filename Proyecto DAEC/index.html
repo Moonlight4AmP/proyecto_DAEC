@@ -1,0 +1,61 @@
+<!--Moonligth, Joselyn Navarro Ramos-->
+<!--Grupo: 4AMPR-->
+<!-- 12/06/22-->
+<!--Objetivo: Un programa donde se realice una página para recomendar libros-->
+<!DOCTYPE html>
+<html>
+<head>
+      	<meta charset="utf-8">
+         <title>Moonlight</title>
+          <!--se abre código javascript-->
+          <script type="text/javascript">
+
+	    		//Función que se llama a través del botón "bookrecommendations"
+	    		function obten()
+	   		 {
+	    		//se obtienen los datos atraves de getElementById
+	    		//se realizan variables para cada pregunta
+	    		var Nm=document.getElementById("Name").value;
+	   		 	var Nn=document.getElementById("Nickname").value;
+       			var Fb=document.getElementById("Favoritebook").value;
+	    			var genre=document.getElementById("Favoritegenre").value;
+
+	    			//alert para que muestre tu nombre(Nm) y apodo(Nn)
+
+	    			alert("Welcome,"+Nm+""+Nn+"\n"+"Please enjoy!");
+		 		}
+		 
+		 </script>
+</head>
+
+<!--Diseño de el titulo-->
+<body text=white background="https://i.pinimg.com/564x/21/76/dc/2176dc21508711f5bc405e3f4781880b.jpg" >
+    <center><font face=Scribble  size=9><p>WELCOME TO MOONLIGHT</p></center>
+    <hr>
+   
+    <center><p>Please, fill this formulary...</p></center>
+
+        <!--preguntas para responder-->
+    
+		 <form id="info">
+			<label>Name:</label>
+			<input type="text" id="Name" placeholder="Insert your name">
+		<br>
+			<label>Nickname:</label>
+			<input type="text" id="Nickname" placeholder="Insert your nickname">
+		<br>
+			<label>Favorite book:</label>
+			<input type="text" id="Favoritebook" placeholder="Insert your favorite book">
+		<br>
+			<label>Favorite Genre:</label>
+			<input type="text" id="Favoritegenre" placeholder="Insert your favorite genre">
+		 </form>
+		<br>
+		      <!--botón que te lleva a las recomendaciones-->
+
+		
+			<a href="recomendaciones_4AmP.html">
+			<button onclick="obten()" style="color: black; width:160px;height:30px;border-radius: 10px;">Book recomendations</button></a>
+
+
+</html>
